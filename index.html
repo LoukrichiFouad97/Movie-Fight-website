@@ -10,6 +10,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
 		/>
+
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -25,12 +26,28 @@
 				</div>
 			</div>
 		</section>
+
 		<div class="container">
-			<input type="text" />
-			<ul class="list">
-				<li class="dropdown-item">sda</li>
-			</ul>
+			<div class="columns">
+				<div class="column">
+					<div class="left-autocomplete"></div>
+					<div class="left-summery"></div>
+				</div>
+				<div class="column">
+					<div class="right-autocomplete"></div>
+					<div class="right-summery"></div>
+				</div>
+			</div>
+
+			<div class="column is-half notification is-primary tutorial">
+				<h1 class="title">Search for a Movie on Both Sides</h1>
+				<p class="subtitle">We will tell you which is best!</p>
+			</div>
 		</div>
+
+		<!-- JS -->
+		<script src="utils.js"></script>
+		<script src="autocomplete.js"></script>
 		<script src="index.js"></script>
 		<!-- <script src="app.js"></script> -->
 	</body>
